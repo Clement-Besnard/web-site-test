@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Titre</title>
+		<style>
+			.banniere{
+				height: 150px;
+				width: 100%;
+				background-color: darkkhaki;
+				vertical-align:middle;
+				display:flex;
+			}
+			.rectangle{
+				height:150px;
+				width: 50%;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.bouton{
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				height: 150px;
+				width: 100px;
+				vertical-align: middle;
+			}
+			.bouton:hover{
+				color:darkred;
+				text-underline-position: auto;
+				text-decoration: underline;
+				font-weight: 1000;
+			}
+			#borderline:hover{
+				background-color: darkkhaki;
+				border-color: darkred;
+				color: darkred;
+			}
+			.carre{
+				height:250px;
+				width:50%;
+				border: 5px dashed black;
+				gap:10px;
+			}
+			.grandcarre{
+				display:flex;
+				padding:20px;
+				gap:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class ="banniere">
+			<div class="rectangle">
+				<div class="bouton">ACCUEIL </div>
+				<div class="bouton">COURS </div>
+				<div class="bouton">CONTACT</div>
+			</div>
+			<div class="rectangle"><button id="borderline" style="background-color: darkkhaki; border-radius: 9px;">S'inscrire</button></div>
+			 
+		</div>
+		<div class = 'grandcarre'>
+			
+			<div class = carre>
+				<h1>Le W3C</h1>
+				Le <u><font color="grey">W3C</font></u> est un consortium créé au mois d'octrobre 
+				1994 par <u><font color="grey">Tim Berners-Lee</font></u> pour promouvoir 
+				la compatibilité et donc la normalisation des technologies du World Wide Web.
+			</div>
+			<div class="carre">
+				<table border="3" align="center" cellpadding="6">
+					<caption>Les notes des élèves</caption>
+					<thead>
+					<tr>
+						<th></th>
+						<th>Matiere 1</th>
+						<th>Matiere 2</th>
+						<th>Matiere 3</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Eleve 1</td>
+						<td align="right">12</td>
+						<td align="middle">15</td>
+						<td align="middle">13</td>
+					</tr>
+					<tr>
+						<td>Eleve 2</td>
+						<td align="middle" colspan="3">9</td>
+					</tr>
+					<tr>
+						<td>Eleve 3</td>
+						<td>16</td>
+						<td>11</td>
+						<td align="middle" rowspan="2">9</td>
+					</tr>
+					<tr>
+						<td>Eleve 4</td>
+						<td>5</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>42</td>
+						<td>46</td>
+						<td>37</td>
+					</tr>
+
+					</tbody>
+				</table>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
